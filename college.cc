@@ -1,3 +1,4 @@
+/** @file college.cc */
 //********************
 //Matthew Aberegg
 //Project 3
@@ -15,7 +16,6 @@ College::College(std::string s){
 	name = s;
 	head = NULL;
 }
-
 
 College::~College(){
 	node * rmptr;
@@ -68,7 +68,11 @@ College& College::operator =(const College& other){
 	}
 	return * this;
 }
-
+/** @brief add
+  * adds a course to the schedule
+  * @param c - a course
+  * @return void
+*/
 void College::add(course& c){
 	node * previous;
 	node * cursor;

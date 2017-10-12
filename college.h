@@ -1,3 +1,4 @@
+/** @file college.h */
 //********************
 //Matthew Aberegg
 //Project 3
@@ -15,7 +16,9 @@
 #ifndef COLLEGE_H
 #define COLLEGE_H
 
-
+/** @class College
+  * @brief A list of classes being taken in college
+ */
 class College{
 	public:
 	College(std::string s);
@@ -25,6 +28,9 @@ class College{
 	void add(course& c);
 	void remove(std::string coursename);
 	void display(std::ostream& outs);
+	/** @brief hours
+	  * @return a number of credit hours
+	*/
 	double hours();
 	double gpa();
 	void save(std::ostream& outs);

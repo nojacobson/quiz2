@@ -1,3 +1,5 @@
+/** @file tarray.h */
+
 /*********************************************************************
 	This is a class to introduce you to the syntax of working with 
 	template classes. Notice that the type being stored is completely
@@ -10,15 +12,26 @@
 
 #include<iostream>
 
+/** @brief This class is an array that allows any object
+  * It has many functions that will allow you to manipulate your data
+*/
 template<class T>
 class Tarray{
     public:
 	// Constructor makes an object with a dynamic array of size 5
+    /** @brief Constructor
+      * @return Tarray object - initialized to size 5
+    */
 	Tarray(); 
 
     	// This function puts the item into the next available spot in the 
 	//array.
 	// If the array is full, resize is called.
+
+	/** @brief adds an item into the next available spot
+	  * @param item - an object T 
+	  * @return void
+	*/
 	void add(T item);
 
 	// iterator functions
@@ -27,6 +40,9 @@ class Tarray{
 	void start();
 
 	// returns true if the current index is less than used
+	/** @brief is_item
+	  * @return bool - true or false depending on if the current index is less than used
+	*/
 	bool is_item()const;
 
 	// moves current index to the next array location

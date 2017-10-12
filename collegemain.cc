@@ -1,3 +1,4 @@
+/** @file collegemain.cc */
 /******************************************************
 	This is the main for Project 3, which asks you to 
     build a container that holds a list of college courses.
@@ -22,6 +23,10 @@
 using namespace std;
 
 // This function displays the menu and returns the user's choice
+/** @brief menu
+  * prints a menu
+  * @return void
+*/
 int menu();
 
 int main(){

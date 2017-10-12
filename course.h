@@ -1,3 +1,4 @@
+/** @file course.h */
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
@@ -12,11 +13,29 @@
 #ifndef COURSE_H
 #define COURSE_H
 
+/** @class cource
+  * @brief A class that is able to be filled with nodes
+*/
 class course{
     public:
+
+    /** @brief constructor 
+	  * @return a course object
+    */
 	course();
 	// Input and output functions
+
+	/** @brief input
+	  * Writes input to wherever the ins is opened to
+	  * @param ins - istream object
+	  * @return void 
+	*/
 	void input(std::istream& ins);
+	/** @brief output
+	  * outputs to wherever outs is opened
+	  * @param outs - ostream object
+	  * @return void
+	*/
 	void output(std::ostream& outs)const;
 	// accessor functions
 	std::string get_course_number()const{

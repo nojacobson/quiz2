@@ -1,3 +1,4 @@
+/** @file course.cc */
 /***********************************************************************
 	The implementation file for course.h, which describes a college
 	course.
@@ -84,7 +85,10 @@ ostream& operator <<(ostream& outs, const course& c){
     c.output(outs);
     return outs;
 }
-
+/** @brief upper_course
+  * touppers all the course in the array
+  * @return void
+*/
 void course::upper_course(){
     for(int i =0; i<course_number.length(); ++i)
 	course_number[i] = toupper(course_number[i]);
